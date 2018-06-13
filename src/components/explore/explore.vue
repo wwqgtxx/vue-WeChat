@@ -1,11 +1,13 @@
-<template>
+
+<template>
   <!--发现组件-->
   <div id="explore">
     <section>
       <div class="weui-cells">
-        <router-link to="/explore/moments" class="weui-cell weui-cell_access" tag="div" v-on:click.native="momentNewMsg=false">
+        <router-link to="/explore/moments" class="weui-cell weui-cell_access" tag="div"
+                     v-on:click.native="momentNewMsg=false">
           <div class="weui-cell__hd">
-            <img src="../../assets/images/find_icon-circle.png" >
+            <img src="../../assets/images/find_icon-circle.png">
           </div>
           <div class="weui-cell__bd" style="line-height: 28px;">
             朋友圈
@@ -21,7 +23,7 @@
       <div class="weui-cells">
         <div class="weui-cell weui-cell_access" id="scanCell">
           <div class="weui-cell__hd">
-           <img src="../../assets/images/find_icon-qrcode.png" >
+            <img src="../../assets/images/find_icon-qrcode.png">
           </div>
           <div class="weui-cell__bd">
             扫一扫
@@ -77,19 +79,46 @@
   </div>
 </template>
 <script>
-    export default {
-        mixins: [window.mixin],
-        data() {
-            return {
-                pageName: "发现",
-                momentNewMsg: true
-            }
-        },
-        activated() {
-            this.$store.commit("toggleTipsStatus", -1)
-        }
+  export default {
+    mixins: [window.mixin],
+    data() {
+      return {
+        pageName: "发现",
+        momentNewMsg: true
+      }
+    },
+    activated() {
+      this.$store.commit("toggleTipsStatus", -1)
     }
+  }
 </script>
-<style>
-    @import "../../assets/css/explore.css";
+<style lang="scss">
+  #explore {
+    .weui-cell__hd {
+      img {
+        width: 20px;
+        margin-right: 10px;
+        display: block;
+      }
+    }
+    .home__notice {
+      position: relative;
+      img {
+        width: 28px;
+        height: 28px;
+        vertical-align: middle;
+      }
+    }
+    .new-msg-dot {
+      position: absolute;
+      top: -4px;
+      right: -5px;
+      display: inline-block;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background-color: red;
+    }
+  }
+
 </style>

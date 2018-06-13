@@ -214,11 +214,11 @@
                         size,
                         item
                     for (var i = 0; i < numNodes; i++) {
-                        figureEl = thumbElements[i]; 
+                        figureEl = thumbElements[i];
                         if (figureEl.nodeType !== 1) {
                             continue
                         }
-                        linkEl = figureEl.children[0]; 
+                        linkEl = figureEl.children[0];
                         size = linkEl.getAttribute('data-size').split('x')
                         item = {
                             src: linkEl.getAttribute('href'),
@@ -228,7 +228,7 @@
                         if (figureEl.children.length > 1) {
                             item.title = figureEl.children[1].innerHTML
                         }
-                        if (linkEl.children.length > 0) {    
+                        if (linkEl.children.length > 0) {
                             item.msrc = linkEl.children[0].getAttribute('src')
                         }
                         item.el = figureEl
@@ -304,7 +304,7 @@
                         history:false,
                         galleryUID: galleryElement.getAttribute('data-pswp-uid'),
                         getThumbBoundsFn: function (index) {
-                            var thumbnail = items[index].el.getElementsByTagName('img')[0], 
+                            var thumbnail = items[index].el.getElementsByTagName('img')[0],
                                 pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
                                 rect = thumbnail.getBoundingClientRect()
                             return { x: rect.left, y: rect.top + pageYScroll, w: rect.width }
@@ -352,6 +352,185 @@
     }
 
 </script>
-<style>
-    @import "../../assets/css/moments.css";
+<style lang="scss">
+  #moments {
+    background: #fff;
+    .home-pic {
+      width: 100%;
+      margin-top: -90px;
+      position: relative;
+      height: 370px;
+      z-index: 5;
+      background: url(https://sinacloud.net/vue-wechat/images/bg/cover.jpg) no-repeat center center;
+      background-size: cover;
+      margin-bottom: 20px;
+    }
+    .home-pic-base {
+      position: absolute;
+      left: 0;
+      bottom: -22px;
+      width: 100%;
+      height: 70px;
+      padding: 0 15px;
+      .top-pic {
+        width: 140px;
+        height: 140px;
+        padding: 3px;
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+        background-color: #ffffff;
+        border: 1px solid #cccccc;
+        float: right;
+      }
+      .top-name {
+        position: absolute;
+        left: 20px;
+        right: 105px;
+        top: 10px;
+        font-size: 20px;
+        text-align: right;
+        color: #ffffff;
+        overflow: hidden;
+      }
+    }
+    .top-pic-inner {
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .drag-reflash {
+      position: absolute;
+      left: 20px;
+      top: -40px;
+      z-index: 2;
+      width: 30px;
+      height: 30px;
+      background: url(../../assets/images/find-album-reflash-icon.png) no-repeat 0 0;
+      background-size: contain;
+    }
+    .home-content {
+      padding-top: 45px;
+      min-height: 500px;
+    }
+    .moments__post {
+
+      background: #fff;
+      display: block;
+      border-bottom: 1px solid #f2eeee;
+      &::before {
+        content: none;
+      }
+      .weui-cell__hd {
+        display: table-cell;
+        vertical-align: top;
+        min-width: 45px;
+        img {
+          width: 45px !important;
+        }
+      }
+      .weui-cell__bd {
+        font-size: 15px;
+        display: table-cell;
+        padding-left: 10px;
+        .paragraphExtender {
+          margin: 5px auto;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: flex;
+        }
+      }
+      .title {
+        color: #094dcc;
+      }
+      .thumbnails {
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        .thumbnail {
+          width: 80px;
+          height: 80px;
+          margin: 3px;
+          margin-left: 0px;
+          background: #757575;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      .toolbar {
+        position: relative;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        .timestamp {
+          color: #757575;
+          font-size: 13px;
+        }
+      }
+      .actionMenu {
+        position: absolute;
+        height: 40px;
+        background-color: #4e5156;
+        border-radius: 5px;
+        z-index: 5;
+        top: -10px;
+        right: 20px;
+        display: none;
+        -webkit-justify-content: space-around;
+        justify-content: space-around;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+      .actionToggle {
+        width: 15px;
+        height: 15px;
+        background: #92abd4;
+        margin-left: auto;
+        border-radius: 1px;
+        position: absolute;
+        right: 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+      }
+      .liketext {
+        margin-top: 10px;
+        width: 100%;
+        background-color: #f3f3f5;
+        position: relative;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        .nickname {
+          color: #094dcc;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
 </style>

@@ -21,7 +21,7 @@
 }
 
 .outter {
-    margin-top: 45px;
+    /*margin-top: 45px;*/
     transition: 0.5s;
     position: absolute;
     top: 0;
@@ -55,7 +55,7 @@ body {
 
 .app-header {
     /*position: absolute;*/
-    position: fixed;
+    position: relative;
     transition: 0.3s;
     width: 100%;
     z-index: 3;

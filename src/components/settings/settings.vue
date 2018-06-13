@@ -8,6 +8,12 @@
 <script>
     export default {}
 </script>
-<style>
-    @import "../../assets/css/settings.css";
+<style lang="scss">
+  #settings {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
 </style>

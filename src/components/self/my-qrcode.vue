@@ -25,14 +25,14 @@
 <script>
     export default {
         mounted() {
-            new QRCode(document.getElementById("qrcode-pic"), {
-                text: "https://vue2-wechat.github.io/",
-                width: 128,
-                height: 128,
-                colorDark: "#000000",
-                colorLight: "#ffffff",
-                correctLevel: QRCode.CorrectLevel.H
-            })
+            // new QRCode(document.getElementById("qrcode-pic"), {
+            //     text: "https://vue2-wechat.github.io/",
+            //     width: 128,
+            //     height: 128,
+            //     colorDark: "#000000",
+            //     colorLight: "#ffffff",
+            //     correctLevel: QRCode.CorrectLevel.H
+            // })
         }
     }
 </script>
@@ -40,7 +40,7 @@
     .qrcode {
         background: #666;
     }
-    
+
     .qrcode section {
         width: 90%;
         padding: 5%;
@@ -49,16 +49,16 @@
         margin-top: 20%;
         background: #fff;
     }
-    
+
     .qrcode .header {
         float: left;
     }
-    
+
     .qrcode .info {
         float: left;
         margin-left: 10px;
     }
-    
+
     .qrcode #qrcode-pic {
         background: url("https://sinacloud.net/vue-wechat/images/qrcode.jpg");
         background-size: 100% 100%;
@@ -67,14 +67,14 @@
         margin: 0 auto;
         margin-top: 20px;
     }
-    
+
     .qrcode #qrcode-pic img {
         display: block;
         width: 180px;
         margin: 0 auto;
         margin-top: 48px;
     }
-    
+
     .qrcode .desc {
         font-size: 12px;
         text-align: center;
