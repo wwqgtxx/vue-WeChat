@@ -1,10 +1,10 @@
 <template>
-    <div id="language">
-        language设置
-    </div>
+  <div id="language">
+    language设置
+  </div>
 </template>
 <script>
-    export default {}
+  export default {}
 </script>
 <style>
 </style>

@@ -1,4 +1,5 @@
-<template>
+
+<template>
   <!--我 组件-->
   <div id="self">
     <div class="weui-tab__content" style="display: block;">
@@ -76,20 +77,20 @@
 
 </template>
 <script>
-    export default {
-        mixins: [window.mixin],
-        data() {
-            return {
-                "pageName": "我"
-            }
-        },
-        mounted() {
-            this.$store.commit("toggleTipsStatus", -1)
-        },
-        activated() {
-            this.$store.commit("toggleTipsStatus", -1)
-        }
+  export default {
+    mixins: [window.mixin],
+    data() {
+      return {
+        "pageName": "我"
+      }
+    },
+    mounted() {
+      this.$store.commit("toggleTipsStatus", -1)
+    },
+    activated() {
+      this.$store.commit("toggleTipsStatus", -1)
     }
+  }
 </script>
 <style lang="scss">
   #self {

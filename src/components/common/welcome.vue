@@ -13,9 +13,9 @@
     mounted() {
       setTimeout(() => {
         this.hide = true;
-      }, 1000);
+      }, 1000)
     }
-  };
+  }
 </script>
 <style lang="scss" scoped>
   .welcome {
