@@ -29,9 +29,9 @@
                     <span>夜华</span>
                 </a>
                 <!-- post内容 -->
-                <p id="paragraph" class="paragraph">点击下方图片预览，点击下方图片预览，点击下方图片预览</p>
+                <p class="paragraph">点击下方图片预览，点击下方图片预览，点击下方图片预览</p>
                 <!-- 伸张链接 -->
-                <!-- <a id="paragraphExtender" class="paragraphExtender">显示全文</a> -->
+                <!-- <a class="paragraphExtender">显示全文</a> -->
                 <!-- 相册 -->
                 <div class="thumbnails my-gallery">
                     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="thumbnail">
@@ -52,12 +52,12 @@
                 <div class="toolbar">
                     <p class="timestamp">17小时前</p>
                     <div>
-                        <div id="actionMenu" class="actionMenu slideIn">
-                            <p class="actionBtn" id="btnLike"><i class="icon icon-96"></i></p>
-                            <p class="actionBtn" id="btnComment"><i class="icon icon-3"></i></p>
+                        <div class="actionMenu slideIn">
+                            <p class="actionBtn btnLike"><i class="icon icon-96"></i></p>
+                            <p class="actionBtn btnComment"><i class="icon icon-3"></i></p>
                         </div>
                     </div>
-                    <span id="actionToggle" class="actionToggle">..</span>
+                    <span class="actionToggle">..</span>
                 </div>
                 <!-- 赞／评论区 -->
                 <p class="liketext"><i class="icon icon-96"></i><span class="nickname">夜华</span>,<span class="nickname">孙尚香</span></p>
@@ -76,9 +76,9 @@
                     <span>夜华</span>
                 </a>
                 <!-- post内容 -->
-                <p id="paragraph" class="paragraph">weui目前是比较好用的ui,在微信和手机中表现非常好。weui目前是比较好用的ui,在微信和手机中表现非常好</p>
+                <p class="paragraph">weui目前是比较好用的ui,在微信和手机中表现非常好。weui目前是比较好用的ui,在微信和手机中表现非常好</p>
                 <!-- 伸张链接 -->
-                <!-- <a id="paragraphExtender" class="paragraphExtender">显示全文</a> -->
+                <!-- <a class="paragraphExtender">显示全文</a> -->
                 <!-- 相册 -->
                 <div class="thumbnails my-gallery">
                     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="thumbnail">
@@ -99,12 +99,12 @@
                 <div class="toolbar">
                     <p class="timestamp">17小时前</p>
                     <div>
-                        <div id="actionMenu" class="actionMenu slideIn">
-                            <p class="actionBtn" id="btnLike"><i class="icon icon-96"></i></p>
-                            <p class="actionBtn" id="btnComment"><i class="icon icon-3"></i></p>
-                        </div>
+                      <div class="actionMenu slideIn">
+                        <p class="actionBtn btnLike"><i class="icon icon-96"></i></p>
+                        <p class="actionBtn btnComment"><i class="icon icon-3"></i></p>
+                      </div>
                     </div>
-                    <span id="actionToggle" class="actionToggle">..</span>
+                    <span class="actionToggle">..</span>
                 </div>
                 <!-- 赞／评论区 -->
                 <p class="liketext"><i class="icon icon-96"></i><span class="nickname">夜华</span>,<span class="nickname">孙尚香</span></p>
@@ -121,9 +121,9 @@
                     <span>夜华</span>
                 </a>
                 <!-- post内容 -->
-                <p id="paragraph" class="paragraph">weui目前是比较好用的ui,在微信和手机中表现非常好。weui目前是比较好用的ui,在微信和手机中表现非常好</p>
+                <p class="paragraph">weui目前是比较好用的ui,在微信和手机中表现非常好。weui目前是比较好用的ui,在微信和手机中表现非常好</p>
                 <!-- 伸张链接 -->
-                <!-- <a id="paragraphExtender" class="paragraphExtender">显示全文</a> -->
+                <!-- <a class="paragraphExtender">显示全文</a> -->
                 <!-- 相册 -->
                <div class="thumbnails my-gallery">
                     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="thumbnail">
@@ -144,12 +144,12 @@
                 <div class="toolbar">
                     <p class="timestamp">17小时前</p>
                     <div>
-                        <div id="actionMenu" class="actionMenu slideIn">
-                            <p class="actionBtn" id="btnLike"><i class="icon icon-96"></i></p>
-                            <p class="actionBtn" id="btnComment"><i class="icon icon-3"></i></p>
-                        </div>
+                      <div class="actionMenu slideIn">
+                        <p class="actionBtn btnLike"><i class="icon icon-96"></i></p>
+                        <p class="actionBtn btnComment"><i class="icon icon-3"></i></p>
+                      </div>
                     </div>
-                    <span id="actionToggle" class="actionToggle">..</span>
+                    <span class="actionToggle">..</span>
                 </div>
                 <!-- 赞／评论区 -->
                 <p class="liketext"><i class="icon icon-96"></i><span class="nickname">夜华</span>,<span class="nickname">孙尚香</span></p>
